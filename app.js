@@ -27,7 +27,7 @@ let listaBaterias = document.getElementById("arrayBaterias");
 
 for (const pila of arrayBaterias){
   let li=document.createElement("li");
-  li.innerHTML=arrayBaterias
+  li.innerHTML=JSON.stringify(arrayBaterias)
   tituloBaterias.appendChild(li);
 }
 
