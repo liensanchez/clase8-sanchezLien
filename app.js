@@ -27,8 +27,13 @@ let listaBaterias = document.getElementById("arrayBaterias");
 
 for (const pila of arrayBaterias){
   let li=document.createElement("li");
-  //AGREGUE JSON.STRNGIFY PARA QUE DEJE DE MOSTRAR [OBJEWCT,OBJECT]
-  li.innerHTML=JSON.stringify(arrayBaterias)
+  //AGREGUE JSON.STRNGIFY PARA QUE DEJE DE MOSTRAR [OBJEWCT,OBJECT] entonces no puedes mostrar todo el objeto
+/*
+tiene que mostrar la propiedad que quieres mostrar en todo caso
+por ejemplo: pila.name;
+me explico?*/
+  //con "arrayBaterias" en cada "li" me muestra el array completo, con "pila" me muestra en cada "li" el un objeto del array
+  li.innerHTML=pila.tipo;
   tituloBaterias.appendChild(li);
 }
 
