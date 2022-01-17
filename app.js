@@ -27,6 +27,7 @@ let listaBaterias = document.getElementById("arrayBaterias");
 
 for (const pila of arrayBaterias){
   let li=document.createElement("li");
+  //AGREGUE JSON.STRNGIFY PARA QUE DEJE DE MOSTRAR [OBJEWCT,OBJECT]
   li.innerHTML=JSON.stringify(arrayBaterias)
   tituloBaterias.appendChild(li);
 }
